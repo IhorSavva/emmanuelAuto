@@ -24,4 +24,40 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://www.autorepairemmanuel.com/es/privacy.html"/>
     <lastmod>2026-11-07</lastmod>
   </url>
+  <url>
+    <loc>https://www.autorepairemmanuel.com/brakes.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.autorepairemmanuel.com/brakes.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.autorepairemmanuel.com/es/frenos.html"/>
+    <lastmod>2026-11-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.autorepairemmanuel.com/es/frenos.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.autorepairemmanuel.com/brakes.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.autorepairemmanuel.com/es/frenos.html"/>
+    <lastmod>2026-11-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.autorepairemmanuel.com/check-engine.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.autorepairemmanuel.com/check-engine.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.autorepairemmanuel.com/es/check-engine.html"/>
+    <lastmod>2026-11-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.autorepairemmanuel.com/es/check-engine.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.autorepairemmanuel.com/check-engine.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.autorepairemmanuel.com/es/check-engine.html"/>
+    <lastmod>2026-11-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.autorepairemmanuel.com/suspension.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.autorepairemmanuel.com/suspension.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.autorepairemmanuel.com/es/suspension.html"/>
+    <lastmod>2026-11-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.autorepairemmanuel.com/es/suspension.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.autorepairemmanuel.com/suspension.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.autorepairemmanuel.com/es/suspension.html"/>
+    <lastmod>2026-11-07</lastmod>
+  </url>
 </urlset>

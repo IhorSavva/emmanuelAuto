@@ -209,9 +209,64 @@ textarea { min-height: 112px; resize: vertical; }
 .site-foot .legal { grid-column: 1 / -1; border-top: 1px solid #1c2940; padding-top: 20px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; font-size: 14px; }
 @media (max-width: 760px) { .site-foot .wrap { grid-template-columns: 1fr; } .site-foot { padding-bottom: 104px; } }
 
+/* service pages */
+.hero-sm { padding: 72px 0 80px; }
+.hero-sm .wrap { grid-template-columns: 1fr; max-width: var(--max); }
+.hero-sm h1 { font-size: clamp(36px, 5.4vw, 60px); max-width: 860px; }
+.signs { list-style: none; padding: 0; margin: 32px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.signs li { display: flex; gap: 12px; align-items: flex-start; padding: 18px; border: 1px solid var(--line); border-radius: 12px; font-weight: 600; }
+.signs svg { flex: none; width: 22px; height: 22px; color: var(--brand); margin-top: 2px; }
+@media (max-width: 860px) { .signs { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .signs { grid-template-columns: 1fr; } }
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 600px) { .grid-2 { grid-template-columns: 1fr; } }
+.card-link { display: inline-block; margin-top: 14px; font-weight: 700; color: var(--brand); text-decoration: none; }
+.card-link:hover { text-decoration: underline; }
+
+/* WhatsApp */
+.btn-wa { background: #25d366; color: #0b2e17; }
+.btn-wa:hover { background: #1fbd5a; }
+.wa-link { display: inline-flex; align-items: center; gap: 8px; color: #7ee2a8; font-weight: 650; }
+.wa-link svg { width: 20px; height: 20px; }
+
+/* makes */
+.makes { margin-top: 36px; padding: 24px 26px; border-radius: var(--radius); background: var(--bg-2); }
+.makes p { margin: 0; }
+.makes ul { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin: 14px 0; }
+.makes li { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 8px 16px; font-weight: 800; font-stretch: 112%; letter-spacing: .02em; }
+
+/* gallery (photos load live from Google) */
+.gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 36px; }
+.gallery figure { margin: 0; position: relative; aspect-ratio: 1; overflow: hidden; border-radius: 12px; background: #1b2638; }
+.gallery figure:first-child { grid-column: span 2; grid-row: span 2; }
+.gallery img { width: 100%; height: 100%; object-fit: cover; }
+.gallery figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 18px 10px 6px; font-size: 12px; color: #dfe6f0; background: linear-gradient(transparent, rgba(0,0,0,.7)); }
+.gallery figcaption a { color: inherit; }
+@media (max-width: 760px) { .gallery { grid-template-columns: 1fr 1fr; } }
+.g-attr { margin: 16px 0 0; font-size: 13px; color: #8d9bb1; }
+
+/* live reviews */
+.quotes .who { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 15px; }
+.quotes .who img { width: 32px; height: 32px; border-radius: 50%; }
+.quotes .who a { font-weight: 700; text-decoration: none; }
+.quotes .who small { color: var(--muted); }
+.quotes .stars svg { width: 16px; height: 16px; }
+.quotes .text { color: var(--ink-2); font-size: 16px; margin: 6px 0 0; display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; overflow: hidden; }
+.reviews .g-attr { color: var(--muted); }
+
+/* FAQ */
+.faq { display: grid; gap: 10px; margin-top: 32px; max-width: 860px; }
+.faq details { background: #fff; border: 1px solid var(--line); border-radius: 12px; }
+.faq summary { cursor: pointer; padding: 18px 52px 18px 20px; font-weight: 700; font-size: 18px; list-style: none; position: relative; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 20px; top: 50%; transform: translateY(-50%); font-size: 26px; font-weight: 400; color: var(--brand); }
+.faq details[open] summary::after { content: "–"; }
+.faq details p { padding: 0 20px 18px; margin: 0; color: var(--ink-2); }
+
 /* sticky call bar on phones */
-.callbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: none; gap: 10px; padding: 10px 16px calc(10px + env(safe-area-inset-bottom)); background: rgba(11,20,36,.97); box-shadow: 0 -6px 20px rgba(0,0,0,.2); }
-.callbar .btn { flex: 1; padding: 14px 10px; }
+.callbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; display: none; gap: 8px; padding: 10px 12px calc(10px + env(safe-area-inset-bottom)); background: rgba(11,20,36,.97); box-shadow: 0 -6px 20px rgba(0,0,0,.2); }
+.callbar .btn { flex: 1; padding: 13px 6px; font-size: 15px; gap: 6px; }
+.callbar .btn svg { width: 18px; height: 18px; }
 @media (max-width: 760px) { .callbar { display: flex; } }
 
 /* admin */

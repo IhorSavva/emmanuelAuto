@@ -1,12 +1,12 @@
 // Paste the web app config from Firebase console → Project settings → Your apps.
 // While apiKey/projectId are empty the site runs in demo mode (the form logs to the console, nothing is saved).
 export const firebaseConfig = {
-  apiKey: "",
-  authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: "",
+  apiKey: "AIzaSyC3wTVb54iYkuGErqA7mqPr3Ya3JsiOTAE",
+  authDomain: "emmanuel-auto-repair.firebaseapp.com",
+  projectId: "emmanuel-auto-repair",
+  storageBucket: "emmanuel-auto-repair.firebasestorage.app",
+  messagingSenderId: "928372380203",
+  appId: "1:928372380203:web:ee67303283dffa03f4106e",
 };
 
 // Optional: reCAPTCHA v3 site key for Firebase App Check. Empty = App Check off.
