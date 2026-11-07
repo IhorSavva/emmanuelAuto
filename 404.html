@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>
+// GitHub Pages serves this page at any missing path, so relative links need a <base>.
+// shortcut: assumes a project site (user.github.io/repo/) or own domain; a user site at github.io root would get a wrong base.
+(function () {
+  var p = location.pathname, base = "/";
+  if (/\.github\.io$/.test(location.hostname) && p.split("/")[1]) base = "/" + p.split("/")[1] + "/";
+  document.write('<base href="' + base + '">');
+})();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found | Auto Repair Emmanuel</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Auto Repair Emmanuel, home"><img src="assets/img/favicon.svg" width="40" height="40" alt=""><span><span class="brand-mark">EMMANUEL</span><span class="brand-sub">Auto Repair · Charlotte</span></span></a>
+  </div>
+</header>
+<main id="main">
+  <section class="page-head">
+    <div class="wrap">
+      <h1>Page not found</h1>
+      <p>This page doesn't exist. <span lang="es">/ Esta página no existe.</span></p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="wrap row-btns">
+      <a class="btn btn-dark" href="index.html">Home page</a>
+      <a class="btn btn-line" href="es/" lang="es">Página en español</a>
+      <a class="btn btn-primary" href="tel:+19805312447">Call (980) 531-2447</a>
+    </div>
+  </section>
+</main>
+</body>
+</html>

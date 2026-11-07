@@ -1,0 +1,38 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Accounts allowed into admin.html. Add the owner's e-mail here and in Firebase Authentication.
+    // shortcut: agency account only until the owner's user exists in Firebase Auth.
+    function isAdmin() {
+      return request.auth != null
+        && request.auth.token.email in ['savva.ihor@gmail.com'];
+    }
+
+    function str(v, min, max) {
+      return v is string && v.size() >= min && v.size() <= max;
+    }
+
+    // Must match the object built in assets/js/booking.js.
+    function validBooking(d) {
+      let keys = ['service', 'car', 'year', 'date', 'name', 'phone', 'email', 'comment', 'lang', 'status', 'createdAt'];
+      return d.keys().hasOnly(keys) && d.keys().hasAll(keys)
+        && str(d['service'], 1, 100)
+        && str(d.car, 1, 100)
+        && str(d.year, 0, 4)
+        && str(d.date, 0, 10)
+        && str(d.name, 1, 100)
+        && str(d.phone, 10, 30)
+        && str(d.email, 0, 120)
+        && str(d.comment, 0, 1000)
+        && d.lang in ['en', 'es']
+        && d.status == 'new'
+        && d.createdAt == request.time;
+    }
+
+    match /bookings/{id} {
+      allow create: if validBooking(request.resource.data);
+      allow read, update, delete: if isAdmin();
+    }
+  }
+}

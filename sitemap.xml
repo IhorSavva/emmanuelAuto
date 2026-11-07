@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://www.autorepairemmanuel.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.autorepairemmanuel.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.autorepairemmanuel.com/es/"/>
+    <lastmod>2026-11-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.autorepairemmanuel.com/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.autorepairemmanuel.com/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.autorepairemmanuel.com/es/"/>
+    <lastmod>2026-11-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.autorepairemmanuel.com/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.autorepairemmanuel.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.autorepairemmanuel.com/es/privacy.html"/>
+    <lastmod>2026-11-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.autorepairemmanuel.com/es/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.autorepairemmanuel.com/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.autorepairemmanuel.com/es/privacy.html"/>
+    <lastmod>2026-11-07</lastmod>
+  </url>
+</urlset>
